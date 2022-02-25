@@ -36,7 +36,7 @@ export default function Home() {
       </Head>
 
       {grouped.map((group, i) => (
-        <PhotosGroup key={i} swaped={i % 2 === 0} images={group} />
+        <PhotosGroup key={i} swaped={i % 3 === 2} images={group} />
       ))}
       {/* trick JIT */}
       <div className="hidden flex-row-reverse w-1/2"></div>
